@@ -1,0 +1,76 @@
+.country-card{
+  max-width: 340px;
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  padding: 20px 0px;
+  background-color: #F8F8F8;
+  color: #022C43;
+
+  h2 {
+    text-align: center;
+    text-wrap: wrap;
+    margin: 20px;
+  }
+
+  h4 {
+    text-align: center;
+    margin: 18px 0px;
+  }
+
+  h5 {
+    margin: 28px 0px;
+  }
+
+  img {
+  width: 300px;
+  height: 200px;
+  padding: 20px;
+  }
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+
+  button {
+    margin: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.2s ease-in-out;
+  }
+
+  button:hover {
+    transform: scale(1.05);
+  }
+
+  img {
+    width: 16px;
+    height: 16px;
+    padding: 0;
+    margin-left: 6px;
+  }
+}
+
+.higher-button {
+  background-color: #FF2D00;
+  color: #F8F8F8;
+}
+
+.lower-button {
+  background-color: #2D00FF;
+  color: #F8F8F8;
+}
+
+.loading-title {
+  text-align: center;
+  margin: 20px;
+}

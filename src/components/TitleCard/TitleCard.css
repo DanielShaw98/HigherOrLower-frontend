@@ -1,0 +1,27 @@
+.title-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 20px;
+
+  h1, h3 {
+    margin: 10px;
+  }
+
+  h1 {
+    font-size: 42px;
+  }
+}
+
+.text-animate-hover {
+  min-width: 10px;
+  display: inline-block;
+  animation-fill-mode: both;
+  cursor: pointer;
+
+  &:hover {
+    animation: rubberBand 1s;
+    color: #FFD700
+  }
+}

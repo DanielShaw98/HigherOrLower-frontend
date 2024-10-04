@@ -1,0 +1,15 @@
+.how-to-play-container {
+  margin-top: 10px;
+}
+
+.dropdown-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.dropdown-content {
+  margin-top: 10px;
+}
