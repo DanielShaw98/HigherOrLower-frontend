@@ -1,6 +1,6 @@
-import React from 'react';
 import CountryCard from '../CountryCard/CountryCard';
 import './GameScreen.css';
+import PropTypes from 'prop-types';
 
 const GameScreen = ({ gameOver, score, highestScore, currentCountry, newCountry, handleGuess, currentPopulation, newPopulation, resetGame }) => {
   return (
@@ -24,5 +24,17 @@ const GameScreen = ({ gameOver, score, highestScore, currentCountry, newCountry,
     </div>
   )
 }
+
+GameScreen.propTypes = {
+  gameOver: PropTypes.bool.isRequired,
+  score: PropTypes.number.isRequired,
+  highestScore: PropTypes.number.isRequired,
+  currentCountry: PropTypes.string.isRequired,
+  newCountry: PropTypes.string.isRequired,
+  handleGuess: PropTypes.func.isRequired,
+  currentPopulation: PropTypes.number.isRequired,
+  newPopulation: PropTypes.number.isRequired,
+  resetGame: PropTypes.func.isRequired,
+};
 
 export default GameScreen

@@ -1,5 +1,5 @@
-import React from 'react';
 import './CountryCard.css';
+import PropTypes from 'prop-types';
 
 const CountryCard = ({ country, currentPopulation, newPopulation, handleGuess, gameOver, rightCard }) => {
   if (!country) {
@@ -29,6 +29,15 @@ const CountryCard = ({ country, currentPopulation, newPopulation, handleGuess, g
       </div>}
     </div>
   )
+}
+
+CountryCard.propTypes = {
+  country: PropTypes.object.isRequired,
+  currentPopulation: PropTypes.number,
+  newPopulation: PropTypes.number,
+  handleGuess: PropTypes.func,
+  gameOver: PropTypes.bool,
+  rightCard: PropTypes.bool,
 }
 
 export default CountryCard

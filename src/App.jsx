@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import axios from 'axios';
 import TitleCard from './components/TitleCard/TitleCard';
 import GameScreen from './components/GameScreen/GameScreen';
@@ -51,7 +51,6 @@ function App() {
           localStorage.setItem('highestScore', score);
         }
       } else {
-        const answer = response.data.answer;
         setCurrentCountry(newCountry);
         setCurrentPopulation(newCountry.population);
         setNewCountry(response.data.new_country);

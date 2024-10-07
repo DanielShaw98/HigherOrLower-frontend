@@ -42,3 +42,9 @@
     transform: scale(1.05);
   }
 }
+
+@media (width <= 800px) {
+  .card-container {
+    flex-direction: column;
+  }
+}
