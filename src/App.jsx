@@ -20,7 +20,7 @@ function App() {
 
   const startGame = async () => {
     try {
-      const response = await axios.post('http://localhost:8000/start-game');
+      const response = await axios.post('https://higherorlower-dbe9b46ea7e3.herokuapp.com/start-game');
       setCurrentCountry(response.data.current_country);
       setNewCountry(response.data.new_country);
       setCurrentPopulation(null);
@@ -38,7 +38,7 @@ function App() {
 
   const handleGuess = async (guess) => {
     try {
-      const response = await axios.post('http://localhost:8000/submit-guess', {
+      const response = await axios.post('https://higherorlower-dbe9b46ea7e3.herokuapp.com/submit-guess', {
         current_country: currentCountry,
         new_country: newCountry,
         guess: guess,
